@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de hours</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Registro de horas</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="formulario">
+            <form action="insert.php" method="POST">
+                <div class="contenedor-inputs">
+                    <table>
+                        <tr>
+                            <td> <input type="text" placeholder="Nombre de tarea" name="task_name" required></td>
+                        </tr>
+                        <tr>
+                            <td> <input type="text" placeholder="Organizacion" name="organization" required></td>
+                        </tr>
+                        <tr>
+                            <td> <input type="text" placeholder="Tus horas trabajadas" name="hours" required></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="ENVIAR" name="send">
+                            </td>
+                        </tr>
+                </div>
+            </form>
+        
+          <!--  <div class="contenedor-horas">
+                <form action="dataSum.php" method="POST">
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Numero de horas</label>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="buttonHours" onclick="" name="bhoras">Consultar horas</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>-->
+            <div class="contenedor-yuanes">
+                <form action="yuanes.php" method="POST">
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Total en Yuanes
+                                   <!-- <?php 
+                                    require('yuanes.php');
+                                    echo $output;
+                                    ?>
+                                    -->
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="buttonYuanes" onclick="" name="bhoras">Consultar Yuanes</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Desarrollado por Fernando y Sonia &copy 2020
+        </p>
+    </footer>
+</body>
+</html>
